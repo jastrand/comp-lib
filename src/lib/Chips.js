@@ -44,12 +44,12 @@ export const Chips = ({ className, thumbNailUrl, title, faCheckCircle, faTimesCi
   return (
     <Container className={className}>
       <Content>
-        <CheckIcon>
+        <CheckIcon className={className}>
           {faCheckCircle && <FontAwesomeIcon icon={faCheckCircle} />}
         </CheckIcon>
         {thumbNailUrl && <ThumbNail url={thumbNailUrl} />}
         {title && <Title>{title}</Title>}
-        <RemoveIcon>
+        <RemoveIcon className={className}>
           {faTimesCircle && <FontAwesomeIcon icon={faTimesCircle} />}
         </RemoveIcon>
       </Content>
